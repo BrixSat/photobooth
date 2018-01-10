@@ -51,13 +51,19 @@ require_once('db.php');
 
     <!-- Result Page -->
     <div class="stages" id="result">
+        <?php if($config['auto_print'] ==false)
+		{
+	?>\
         <a href="#" class="btn homebtn"><i class="fa fa-home"></i> <span data-l10n="home"></span></a>
         <div class="resultInner hidden">
             <a href="#" class="btn gallery"><i class="fa fa-th"></i> <span data-l10n="gallery"></span></a>
             <?php if($config['use_qr']){ echo '<a href="#" class="btn qrbtn"><div class="qr"></div><span class="qrbtnlabel"><i class="fa fa-qrcode"></i><span data-l10n="qr"></span></span></a>'; } ?>
-            <?php if($config['use_print']){ echo '<a href="#" class="btn printbtn"><i class="fa fa-print"></i><span data-l10n="print"></span></a>'; } ?>
+            <?php if($config['use_print']){ echo '<a href="#" class="btn printbtn"><i class="fa fa-print"></i><span data-l10n="print"></span></a>'; } ?> 
             <a href="#" class="btn newpic"><i class="fa fa-camera"></i> <span data-l10n="newPhoto"></span></a>
         </div>
+	<?php
+		}
+	?>
         <?php if($config['use_qr']){ echo '<div class="qr2"></div>';} ?>
     </div>
 

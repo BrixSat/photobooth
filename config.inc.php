@@ -5,8 +5,8 @@ $config['os'] = (DIRECTORY_SEPARATOR == '\\') || (strtolower(substr(PHP_OS, 0, 3
 $config['dev'] = false	;
 // the print button
 $config['use_print'] = true;
-// print without button
-$config['auto_print'] = false;
+// print without showing info on the screen, please change also the config in js
+$config['auto_print'] = true;
 $config['use_qr'] = true;
 $config['print_qr'] = false;
 $config['watermark'] = "/var/www/html/resources/img/logo_ge.png";
