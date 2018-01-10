@@ -1,0 +1,291 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photobooth</title>
+	<link rel="stylesheet" href="Photobooth_files/normalize.css">
+	<link rel="stylesheet" href="Photobooth_files/font-awesome.css">
+	<link rel="stylesheet" href="Photobooth_files/photoswipe.css">
+	<link rel="stylesheet" href="Photobooth_files/default-skin.css">
+	<link rel="stylesheet" href="Photobooth_files/style.css">
+	<link rel="stylesheet" href="Photobooth_files/neon.css">
+
+	<script type="text/javascript">
+		var isdev = true;
+        var gallery_newest_first = true;
+
+	</script>
+</head>
+
+<body class="deselect">
+<div id="wrapper" style="width: 1626px; height: 935px;">
+
+    <!-- Start Page -->
+    <div class="stages takePicBody" id="start" style="display: block;">
+<!--        <a class="gallery btn" href="#"><i class="fa fa-th"></i> <span data-l10n="gallery"></span></a> -->
+        <div class="blurred">
+        </div>
+        <div class="inner">
+            <div class="names" <div="" data-l10n="startScreen"></div></div>
+           <!-- <a href="#" class="btn takePic"><i class="fa fa-camera"></i> <span data-l10n="takePhoto"></span></a>-->
+        </div>
+    </div>
+
+    <!-- Loader -->
+    <div class="stages" id="loader" style="display: none; width: 1626px; height: 935px;">
+        <div class="loaderInner">
+            <div class="spinner" style="display: none;">
+                <i class="fa fa-cog fa-spin"></i>
+            </div>
+
+            <div id="counter"></div>
+            <div class="loading"></div>
+        </div>
+    </div>
+
+    <!-- Result Page -->
+    <div class="stages" id="result" style="display: none;">
+        <a href="#" class="btn homebtn"><i class="fa fa-home"></i> <span data-l10n="home">Início</span></a>
+        <div class="resultInner hidden" style="bottom: -100px;">
+            <a href="#" class="btn gallery"><i class="fa fa-th"></i> <span data-l10n="gallery">Galeria</span></a>
+            <a href="#" class="btn qrbtn" style=""><div class="qr" style="display: none;"></div><span class="qrbtnlabel"><i class="fa fa-qrcode"></i><span data-l10n="qr">QR Code</span></span></a>            <a href="#" class="btn printbtn"><i class="fa fa-print"></i><span data-l10n="print">Imprimir</span></a>            <a href="#" class="btn newpic"><i class="fa fa-camera"></i> <span data-l10n="newPhoto">Nova Foto</span></a>
+        </div>
+        <div class="qr2"></div>    </div>
+
+    <!-- Gallery -->
+    <div id="gallery">
+        <div class="galInner" style="display: none;">
+            <div class="galHeader">
+                <h1><span data-l10n="gallery">Galeria</span></h1>
+                <a href="#" class="close_gal"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="images" id="galimages" data-pswp-uid="1">
+                <a href="http://127.0.0.1/images/739c0018a5f7e88e25537e567961b592.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/739c0018a5f7e88e25537e567961b592.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/10647e0a1d86c692b8358ee1aa197708.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/10647e0a1d86c692b8358ee1aa197708.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/01c14627af6eebd7c2ac7c8ea4c24c81.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/01c14627af6eebd7c2ac7c8ea4c24c81.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/09dedac5146e7980f3f11b7269852869.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/09dedac5146e7980f3f11b7269852869.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/a736b0fb6201b07ff7f7e9c46380050c.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/a736b0fb6201b07ff7f7e9c46380050c.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/3bd7f5ae2456c54076518d310fd18089.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/3bd7f5ae2456c54076518d310fd18089.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/840f98a997e349335b0a0247f2ce4bba.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/840f98a997e349335b0a0247f2ce4bba.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/f9c011b6eaa67544a9cdc47e96ae81de.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/f9c011b6eaa67544a9cdc47e96ae81de.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/8b2836d5e051df3e5f176e5cee8e3712.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/8b2836d5e051df3e5f176e5cee8e3712.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/944ab3f3fd0acc2168e696f662923844.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/944ab3f3fd0acc2168e696f662923844.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/0763d09df3c3ff787ba73f7dbae105b0.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/0763d09df3c3ff787ba73f7dbae105b0.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/cafa5f685f80b92373b41196977b24df.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/cafa5f685f80b92373b41196977b24df.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/f74e354bcd5d079a1299233ad7960772.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/f74e354bcd5d079a1299233ad7960772.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/08f864ac7d6adf64244a9905785117ab.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/08f864ac7d6adf64244a9905785117ab.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/e7fd056ba317cea01ca742e1e6c1506f.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/e7fd056ba317cea01ca742e1e6c1506f.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/4aed088132a9a89b37fe085a45927a02.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/4aed088132a9a89b37fe085a45927a02.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/44fde986ea24ec1d4f5571499e6441bb.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/44fde986ea24ec1d4f5571499e6441bb.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/1af11a34479b9033b3a372421bd01d04.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/1af11a34479b9033b3a372421bd01d04.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/0eb899fc1ea7365437f3172fdcc580fc.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/0eb899fc1ea7365437f3172fdcc580fc.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/ecfa584cadd2f325ecac505d71c523c0.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/ecfa584cadd2f325ecac505d71c523c0.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/ff610c354cdd8f90d766994cb56f3e24.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/ff610c354cdd8f90d766994cb56f3e24.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/1566c822640d261b234ba7331232c599.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/1566c822640d261b234ba7331232c599.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/d5348554f2bdd7671cdb15ca5d1eaf06.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/d5348554f2bdd7671cdb15ca5d1eaf06.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/47ee66d96825753fdca04429aca53537.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/47ee66d96825753fdca04429aca53537.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/ad64cb062f20d7a15027752fab4530c7.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/ad64cb062f20d7a15027752fab4530c7.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/b3c538083a2b284bfa23448d8a432ff6.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/b3c538083a2b284bfa23448d8a432ff6.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/a8a1d3f889435fc264234098fd3b0432.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/a8a1d3f889435fc264234098fd3b0432.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/11fc1e717ab1acde4397eb28036fb020.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/11fc1e717ab1acde4397eb28036fb020.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/c2326da9027b5e005bab915d1ed7a08f.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/c2326da9027b5e005bab915d1ed7a08f.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/fb907424366dddfc13b2380796014335.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/fb907424366dddfc13b2380796014335.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/e0c7b6e56bfd4902dbe7e735162a5e59.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/e0c7b6e56bfd4902dbe7e735162a5e59.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/abccc3a28eaf9d4c6b9f3bbc38004464.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/abccc3a28eaf9d4c6b9f3bbc38004464.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/2825616a1c29d48135a73ff71db70176.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/2825616a1c29d48135a73ff71db70176.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/74e558042b22222c6f69c36ada03497a.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/74e558042b22222c6f69c36ada03497a.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/e222e61a40333189851c3f18736d95b2.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/e222e61a40333189851c3f18736d95b2.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/b286104b4bdf68c633662e9b44156a6d.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/b286104b4bdf68c633662e9b44156a6d.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/499ba8b97769a98c28c75f4488362b2f.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/499ba8b97769a98c28c75f4488362b2f.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/6acbf26ac05c322452dd502a443c1f25.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/6acbf26ac05c322452dd502a443c1f25.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/e98421aba191390fea1e365b62d88101.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/e98421aba191390fea1e365b62d88101.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/00be5fd3d57e02fc8432807fcc5b34ef.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/00be5fd3d57e02fc8432807fcc5b34ef.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/8ff76dc2cc67fe8eb0b65b77c78cebc7.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/8ff76dc2cc67fe8eb0b65b77c78cebc7.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/4b9b6788e9828f31cac0fee90d02f778.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/4b9b6788e9828f31cac0fee90d02f778.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/63c6793bceb4d759b4d61e0e6cd11dff.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/63c6793bceb4d759b4d61e0e6cd11dff.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/d2c833e09f2f323b1f2eec6888f63a48.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/d2c833e09f2f323b1f2eec6888f63a48.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/fc8e968fac1d7e8d97e2b21f58165e25.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/fc8e968fac1d7e8d97e2b21f58165e25.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/5d5c8cbbbd51cd6ea437633029d9ebe9.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/5d5c8cbbbd51cd6ea437633029d9ebe9.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/a1ef34bf9b36f19e537b17d1b09dd8d0.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/a1ef34bf9b36f19e537b17d1b09dd8d0.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/fd2822bf9af9cc5be30383b5c79789d9.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/fd2822bf9af9cc5be30383b5c79789d9.jpg">
+								<figure>Caption</figure>
+							</a><a href="http://127.0.0.1/images/5899ddc0a2bf67fcdfab942d0a3d7be4.jpg" data-size="1920x1280">
+								<img src="Photobooth_files/5899ddc0a2bf67fcdfab942d0a3d7be4.jpg">
+								<figure>Caption</figure>
+							</a>            </div>
+        </div>
+    </div>
+    
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+     It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+        PhotoSwipe keeps only 3 of them in DOM to save memory.
+        Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <button class="gal-print" title="Print"><i class="fa fa-print"></i></button>                <button class="gal-qr-code" title="Qr Code"><i class="fa fa-qrcode"></i></button>                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+    <div class="pswp__qr">
+
+    </div>
+</div>
+
+
+	<script type="text/javascript" src="Photobooth_files/jquery.js"></script>
+	<script type="text/javascript" src="Photobooth_files/jquery_003.js"></script>
+	<script type="text/javascript" src="Photobooth_files/TweenLite.js"></script>
+	<script type="text/javascript" src="Photobooth_files/EasePack.js"></script>
+	<script type="text/javascript" src="Photobooth_files/jquery_002.js"></script>
+	<script type="text/javascript" src="Photobooth_files/CSSPlugin.js"></script>
+	<script type="text/javascript" src="Photobooth_files/photoswipe.js"></script>
+	<script type="text/javascript" src="Photobooth_files/photoswipe-ui-default.js"></script>
+	<script type="text/javascript" src="Photobooth_files/photoinit.js"></script>
+	<script type="text/javascript" src="Photobooth_files/core.js"></script>
+	<script type="text/javascript" src="Photobooth_files/pt.js"></script>
+
+
+
+</body></html>
