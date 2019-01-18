@@ -1,0 +1,14 @@
+Short Term:
+
+- Allow bookings without registration (i.e. inline registration)
+
+Long Term:
+
+- Introduce testing via PHPUnit/Selenium
+- Introduce maintenance cronjob
+
+- Occasionally clean session directory
+
+- Advanced statistics module (with billing reports)
+- Billing module (invoice/paypal)
+- Coupon module

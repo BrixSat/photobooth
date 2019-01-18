@@ -1,0 +1,52 @@
+--- Preparations ---
+
+Only relevant if you have cloned directly from GitHub!
+If you have downloaded a package from our website,
+continue with installation.
+
+0. Install dependencies via composer
+
+--- Installation ---
+
+1. Setup local configuration
+   - rename /config/autoload/local.php.dist to local.php
+   - edit local.php
+
+2. Enable (recursively) UNIX write permission for
+   - /data/cache/
+   - /data/log/
+   - /data/session/
+   - /public/docs-client/upload/
+   - /public/imgs-client/upload/
+
+3. Setup the database via setup.php
+
+4. Delete setup tool
+   - /public/setup.php
+
+5. Customize public files (optional)
+   - css-client/default.css (custom color scheme)
+   - imgs-client/icons/fav.ico
+   - imgs-client/layout/logo.png (75x75)
+
+6. Have fun! :)
+
+
+
+--- Deployment ---
+
+Once you are satisfied with the system and want to use it in the wild,
+please make sure to set the Apache document root directly to the /public/-directory
+so that your domain will read like that:
+
+http://example.com/
+
+And not like that:
+
+http://example.com/public/
+
+The latter is a huge security threat, that is only acceptable while testing the system.
+
+You may also consider to use a subdomain, like so:
+
+http://bookings.example.com/

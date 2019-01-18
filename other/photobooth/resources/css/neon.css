@@ -1,0 +1,31 @@
+body {
+    background: none repeat scroll 0 0 #000000;
+}
+.efx-0-neon {
+    background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+    float: left;
+    font-family:"Warnes";
+    margin: auto;
+    text-align: center;
+    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FF00DE, 0 0 70px #FF00DE, 0 0 80px #FF00DE, 0 0 100px #FF00DE;
+
+}
+
+.efx-1-neon {
+    color: #FFFFFF;
+    float: left;
+    font-family:"Zeyada";
+    margin: auto;
+    text-align: center;
+    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FF00DE, 0 0 70px #FF00DE, 0 0 80px #FF00DE, 0 0 100px #FF00DE;
+}
+
+.efx-2-neon {
+    color: #FFFFFF;
+    float: left;
+    font-family:"Princess Sofia";
+    margin: auto;
+    text-align: center;
+    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FF00DE, 0 0 70px #FF00DE, 0 0 80px #FF00DE, 0 0 100px #FF00DE;
+}

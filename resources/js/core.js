@@ -6,7 +6,7 @@ var photoBooth = (function () {
         loader = $('#loader'),
         startPage = $('#start'),
         countDown = 3,
-        timeToLive = 5000,
+        timeToLive = 90000,
         qr = false,
         timeOut,
         saving = false,
@@ -14,8 +14,8 @@ var photoBooth = (function () {
         processing = false,
         pswp = {},
         resultPage = $('#result'),
-        showResultPic = false,
-	auto_print = true;
+        showResultPic = false;
+
     // timeOut function
     public.resetTimeOut = function () {
         timeOut = setTimeout(function () {
